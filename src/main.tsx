@@ -1,10 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './App';
+import { NextUIProvider } from '@nextui-org/react';
+import Todolist from './Todolist';
+
+import 'antd/dist/antd.css';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <NextUIProvider>
+    <Todolist />
+    </NextUIProvider>
   </React.StrictMode>,
   document.getElementById('root')
 );
